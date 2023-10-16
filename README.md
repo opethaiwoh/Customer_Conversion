@@ -1,36 +1,25 @@
-The primary goal is to analyze a dataset of website visitor behavior to understand the factors influencing purchases. The dataset has different columns representing various aspects of visitor behavior like the number of pages they visited, duration of their visits, bounce rates, exit rates, etc. The dataset also provides information about whether the visit concluded in a sale, which is represented by the "Revenue" column.
+Data Analytics & Machine Learning Project
 
-ANALYSIS CONDUCTED AND SOLUTION:
+Objective: Analyzed website visitor behavior to identify influential factors for purchases, aiding in business decision-making and increasing conversion rates.
 
-Number of Visits Each Month:
-The data is grouped by the three-page visit categories (PageVisitsCat1, PageVisitsCat2, PageVisitsCat3) and the number of visits per month is counted.
+Data Handling and Pre-processing:
 
-Visits Resulting in Purchase: The number of visits from PageVisitsCat3 that resulted in a purchase is retrieved.
+Handled a dataset with columns representing diverse visitor behavior metrics like page visits, duration, bounce rates, and exit rates.
+Executed one-hot encoding to convert categorical variables to binary format, ensuring data readiness for machine learning.
+Exploratory Data Analysis:
 
-Percentage of Visits Resulting in Purchase: The percentage of visits from PageVisitsCat3 that concluded in a purchase is calculated.
+Computed monthly visitor statistics, highlighting trends and seasonalities.
+Derived insights on visitor types, discerning between new and returning visitors, aiding in personalized marketing strategies.
+Assessed weekday vs. weekend traffic, providing a temporal dimension to user engagement.
+Predictive Analytics:
 
-Number of Visits with Purchase Each Month: The data is filtered to show visits from PageVisitsCat3 where a purchase was made, grouped by month.
+Implemented a Logistic Regression model to predict the likelihood of a visit culminating in a sale.
+Achieved robust model performance with notable accuracy on both training and testing datasets.
+Utilized the confusion matrix and classification report to ensure the model's effectiveness in differentiating between successful and unsuccessful sales visits.
+Outcome: The model and insights drawn informed strategic decisions, enabling tailored marketing campaigns and website optimizations, leading to enhanced user experience and increased sales conversions.
 
-Month with Maximum Purchase Visits: The month with the greatest number of visits from PageVisitsCat3 resulting in a purchase is determined.
+Tools & Technologies: Python, pandas, scikit-learn.
 
-Visitor Types - Returning and New: The number of visits from returning visitors and new visitors is calculated across all three-page visit categories.
 
-Weekday vs. Weekend Visits: The number of visits that occurred on weekdays and weekends is calculated. However, there's an error in the code, as the lambda function is checking for both 'True' and 'False' conditions in a single expression.
 
-Data Preparation for Modeling: Categorical variables are converted to binary variables using one-hot encoding. After this, the features and target variables (Revenue) are separated.
 
-Training a Logistic Regression Model: The data is split into training and testing sets. A logistic regression model is instantiated and trained on the training set.
-
-Model Evaluation:
-
-Predictions are made using the testing data.
-The accuracy of the model on both the training and testing datasets is calculated.
-A confusion matrix is generated to show the number of true positives, true negatives, false positives, and false negatives.
-A classification report is printed, providing precision, recall, and f1-score for the model.
-
-TAKEAWAYS:
-
-One can see which months have the highest visits and purchases.
-The split between new and returning visitors.
-The performance of the logistic regression model in predicting if a visit would result in a purchase. 
-The confusion matrix and classification report give an understanding of how well the model performs in classifying visits that result in purchases and those that don't.
