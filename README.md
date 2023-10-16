@@ -4,7 +4,7 @@ Objective: Analyzed website visitor behavior to identify influential factors for
 
 Data Handling and Pre-processing:
 
-Handled a dataset with columns representing diverse visitor behavior metrics like page visits, duration, bounce rates, and exit rates.
+Handled a 12, 284 dataset with columns representing diverse visitor behavior metrics like page visits, duration, bounce rates, and exit rates.
 Executed one-hot encoding to convert categorical variables to binary format, ensuring data readiness for machine learning.
 Exploratory Data Analysis:
 
